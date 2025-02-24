@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Content with notebooks &#8212; My sample book</title>
+    <title>Penyelesaian Sistem Persamaan liniear &#8212; My sample book</title>
   
   
   
@@ -183,7 +183,7 @@
         </ul>
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="markdown.html">Sistem Persamaan Linier</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Content with notebooks</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Penyelesaian Sistem Persamaan liniear</a></li>
 <li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
 </ul>
 
@@ -286,7 +286,7 @@
       
       
       
-      <li><a href="_sources/notebooks.ipynb" target="_blank"
+      <li><a href="_sources/notebooks.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -296,7 +296,7 @@
 <span class="btn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="btn__text-container">.ipynb</span>
+<span class="btn__text-container">.md</span>
 </a>
 </li>
       
@@ -370,7 +370,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Content with notebooks</h1>
+    <h1>Penyelesaian Sistem Persamaan liniear</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -380,9 +380,9 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#markdown-notebooks">Markdown + notebooks</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#myst-markdown">MyST markdown</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#code-blocks-and-outputs">Code blocks and outputs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-baris-elementer">Operasi Baris Elementer</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eleminasi-gauss">Eleminasi Gauss</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-langkah-menyelesaikan-eliminasi-gauss">Langkah langkah menyelesaikan Eliminasi Gauss</a></li>
 </ul>
             </nav>
         </div>
@@ -394,83 +394,154 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="content-with-notebooks">
-<h1>Content with notebooks<a class="headerlink" href="#content-with-notebooks" title="Link to this heading">#</a></h1>
-<p>You can also create content with Jupyter Notebooks. This means that you can include
-code blocks and their outputs in your book.</p>
-<section id="markdown-notebooks">
-<h2>Markdown + notebooks<a class="headerlink" href="#markdown-notebooks" title="Link to this heading">#</a></h2>
-<p>As it is markdown, you can embed images, HTML, etc into your posts!</p>
-<p><img alt="" src="https://myst-parser.readthedocs.io/en/latest/_static/logo-wide.svg" /></p>
-<p>You can also <span class="math notranslate nohighlight">\(add_{math}\)</span> and</p>
-<div class="math notranslate nohighlight">
-\[
-math^{blocks}
-\]</div>
-<p>or</p>
+  <section id="penyelesaian-sistem-persamaan-liniear">
+<h1>Penyelesaian Sistem Persamaan liniear<a class="headerlink" href="#penyelesaian-sistem-persamaan-liniear" title="Link to this heading">#</a></h1>
+<p>Penyelesaian sistem persamaan linear bergantung pada jumlah variabel dan jumlah persamaan.</p>
+<p>Berikut beberapa metode penyelesaiannya :
+1.Substitusi
+Salah satu persamaan diubah sehingga salah satu variabel diekspresikan dalam bentuk variabel lain, lalu disubstitusikan ke dalam persamaan kedua.</p>
+<p>2.Eliminasi</p>
+<p>Melibatkan penjumlahan atau pengurangan persamaan untuk menghilangkan satu variabel, sehingga sistem dapat diselesaikan secara bertahap.</p>
+<ol class="arabic simple" start="3">
+<li><p>Metode Matriks (Eliminasi Gauss/Jordan, Invers Matriks)</p></li>
+</ol>
+<p>Sistem ditulis dalam bentuk matriks dan diselesaikan menggunakan operasi baris elementer atau invers matriks</p>
+<section id="operasi-baris-elementer">
+<h2>Operasi Baris Elementer<a class="headerlink" href="#operasi-baris-elementer" title="Link to this heading">#</a></h2>
+<p>Operasi Baris Elementer (OBE) adalah teknik manipulasi baris pada matriks untuk menyelesaikan sistem persamaan linear. OBE digunakan dalam metode Eliminasi Gauss dan Gauss-Jordan untuk mengubah matriks ke bentuk eselon baris atau eselon tereduksi.</p>
+<p>Tiga Jenis Operasi Baris Elementer:</p>
+<ol class="arabic simple">
+<li><p>Pertukaran Baris (Row Swapping)</p></li>
+</ol>
+<p>Menukar dua baris dalam matriks.</p>
+<p>Contoh: Tukar baris ke-1 dan ke-2 →</p>
+<ol class="arabic simple" start="2">
+<li><p>Perkalian Baris dengan Skalar (Scaling)</p></li>
+</ol>
+<p>Mengalikan suatu baris dengan bilangan bukan nol.</p>
+<p>Contoh: Kalikan baris ke-2 dengan 3 →</p>
+<ol class="arabic simple" start="3">
+<li><p>Penjumlahan atau Pengurangan Baris (Row Addition/Subtraction)</p></li>
+</ol>
+<p>Menjumlahkan atau mengurangkan kelipatan suatu baris ke baris lain.</p>
+<p>Contoh:  (mengurangi dua kali baris pertama dari baris kedua)</p>
+<p>Contoh Penerapan OBE:</p>
+<p>Misalkan kita memiliki sistem persamaan:</p>
+<p>\begin{cases}
+x + 2y = 5 \
+3x + 4y = 11
+\end{cases}</p>
+<p>Langkah 1: Tuliskan dalam Matriks Augmented</p>
+<p>\begin{bmatrix}
+1 &amp; 2 &amp; | 5 \
+3 &amp; 4 &amp; | 11
+\end{bmatrix}</p>
+<p>Langkah 2: Eliminasi x dari Baris 2
+Lakukan operasi:
+R_2 \to R_2 - 3R_1</p>
+<p>Hasil:</p>
+<p>\begin{bmatrix}
+1 &amp; 2 &amp; | 5 \
+0 &amp; -2 &amp; | -4
+\end{bmatrix}</p>
+<p>Langkah 3: Ubah Elemen Pivot Menjadi 1
+Bagi baris kedua dengan -2:</p>
+<p>R_2 \to \frac{R_2}{-2}</p>
+<p>Hasil:</p>
+<p>\begin{bmatrix}
+1 &amp; 2 &amp; | 5 \
+0 &amp; 1 &amp; | 2
+\end{bmatrix}</p>
+<p>Langkah 4: Eliminasi y dari Baris 1
+Lakukan:</p>
+<p>R_1 \to R_1 - 2R_2</p>
+<p>Hasil:</p>
+<p>\begin{bmatrix}
+1 &amp; 0 &amp; | 1 \
+0 &amp; 1 &amp; | 2
+\end{bmatrix}</p>
+</section>
+<section id="eleminasi-gauss">
+<h2>Eleminasi Gauss<a class="headerlink" href="#eleminasi-gauss" title="Link to this heading">#</a></h2>
+<p>Eliminasi Gauss adalah metode untuk menyelesaikan sistem persamaan linear dengan mengubah matriks augmented menjadi bentuk eselon baris menggunakan operasi baris elementer (OBE).</p>
+<p>Berikut beberapa contoh soal eleminasi gauss</p>
+<p>Contoh Soal 1
+Selesaikan dengan menggunakan Eleminasi Gauss</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-\begin{aligned}
-\mbox{mean} la_{tex} \\ \\
-math blocks
-\end{aligned}
+\begin{array}{cc}
+x_1+2_x2+3x_3z&amp;=6\\
+2x_1+4x_2+6x_12&amp;=4\\
+x_3-x_2&amp;=2
+\end{array}
 \end{split}\]</div>
-<p>But make sure you $Escape $your $dollar signs $you want to keep!</p>
+<p>Contol Soal 2</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{array}{cc}
+x_1+x_2+x_3&amp;=3\\
+2x_1+x_3&amp;=5\\
+x_1+2x_2&amp;=3\\
+\end{array}
+\end{split}\]</div>
+<p>Contoh Soal 3</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{array}{cc}
+2x_1+2x_2&amp;=4\\
+x_1+x_2&amp;=2\\
+\end{array}
+\end{split}\]</div>
+<p>Penyelesaian
+<img alt="image" src="https://hackmd.io/_uploads/SkINBUF51l.png" /></p>
+<p>Contoh soal 4</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{array}{cc}
+x_1+x_2&amp;=5\\
+x_1+2x_3&amp;=6\\
+\end{array}
+\end{split}\]</div>
+<p>Penyelesaian
+<img alt="image" src="https://hackmd.io/_uploads/S1HPS8Fcyg.png" /></p>
 </section>
-<section id="myst-markdown">
-<h2>MyST markdown<a class="headerlink" href="#myst-markdown" title="Link to this heading">#</a></h2>
-<p>MyST markdown works in Jupyter Notebooks as well. For more information about MyST markdown, check
-out <a class="reference external" href="https://jupyterbook.org/content/myst.html">the MyST guide in Jupyter Book</a>,
-or see <a class="reference external" href="https://myst-parser.readthedocs.io/en/latest/">the MyST markdown documentation</a>.</p>
-</section>
-<section id="code-blocks-and-outputs">
-<h2>Code blocks and outputs<a class="headerlink" href="#code-blocks-and-outputs" title="Link to this heading">#</a></h2>
-<p>Jupyter Book will also embed your code blocks and output in your book.
-For example, here’s some sample Matplotlib code:</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">rcParams</span><span class="p">,</span> <span class="n">cycler</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ion</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;contextlib.ExitStack at 0x746d841206e0&gt;
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Fixing random state for reproducibility</span>
-<span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">19680801</span><span class="p">)</span>
-
-<span class="n">N</span> <span class="o">=</span> <span class="mi">10</span>
-<span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">logspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span> <span class="o">+</span> <span class="n">ii</span> <span class="k">for</span> <span class="n">ii</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">)]</span>
-<span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">data</span><span class="p">)</span><span class="o">.</span><span class="n">T</span>
-<span class="n">cmap</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">cm</span><span class="o">.</span><span class="n">coolwarm</span>
-<span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;axes.prop_cycle&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">cycler</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">cmap</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">N</span><span class="p">)))</span>
-
-
-<span class="kn">from</span> <span class="nn">matplotlib.lines</span> <span class="kn">import</span> <span class="n">Line2D</span>
-<span class="n">custom_lines</span> <span class="o">=</span> <span class="p">[</span><span class="n">Line2D</span><span class="p">([</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="n">cmap</span><span class="p">(</span><span class="mf">0.</span><span class="p">),</span> <span class="n">lw</span><span class="o">=</span><span class="mi">4</span><span class="p">),</span>
-                <span class="n">Line2D</span><span class="p">([</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="n">cmap</span><span class="p">(</span><span class="mf">.5</span><span class="p">),</span> <span class="n">lw</span><span class="o">=</span><span class="mi">4</span><span class="p">),</span>
-                <span class="n">Line2D</span><span class="p">([</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="n">cmap</span><span class="p">(</span><span class="mf">1.</span><span class="p">),</span> <span class="n">lw</span><span class="o">=</span><span class="mi">4</span><span class="p">)]</span>
-
-<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
-<span class="n">lines</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">custom_lines</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;Cold&#39;</span><span class="p">,</span> <span class="s1">&#39;Medium&#39;</span><span class="p">,</span> <span class="s1">&#39;Hot&#39;</span><span class="p">]);</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<img alt="_images/278d4a495af51f3b5ec6c3b5c8d4b48aeb6e019b7cc3758cfcc9bed0b219cfd7.png" src="_images/278d4a495af51f3b5ec6c3b5c8d4b48aeb6e019b7cc3758cfcc9bed0b219cfd7.png" />
-</div>
-</div>
-<p>There is a lot more that you can do with outputs (such as including interactive outputs)
-with your book. For more information about this, see <a class="reference external" href="https://jupyterbook.org">the Jupyter Book documentation</a></p>
+<section id="langkah-langkah-menyelesaikan-eliminasi-gauss">
+<h2>Langkah langkah menyelesaikan Eliminasi Gauss<a class="headerlink" href="#langkah-langkah-menyelesaikan-eliminasi-gauss" title="Link to this heading">#</a></h2>
+<p>Langkah 1: Tuliskan dalam Bentuk Matriks Augmented</p>
+<p>Misalkan sistem persamaan linear diberikan sebagai:</p>
+<p>\begin{cases}
+a_{11}x_1 + a_{12}x_2 + \dots + a_{1n}x_n = b_1 \
+a_{21}x_1 + a_{22}x_2 + \dots + a_{2n}x_n = b_2 \
+\vdots \
+a_{m1}x_1 + a_{m2}x_2 + \dots + a_{mn}x_n = b_m
+\end{cases}</p>
+<p>\begin{bmatrix}
+a_{11} &amp; a_{12} &amp; \dots &amp; a_{1n} &amp; | b_1 \
+a_{21} &amp; a_{22} &amp; \dots &amp; a_{2n} &amp; | b_2 \
+\vdots &amp; \vdots &amp; \ddots &amp; \vdots &amp; \vdots \
+a_{m1} &amp; a_{m2} &amp; \dots &amp; a_{mn} &amp; | b_m
+\end{bmatrix}</p>
+<hr class="docutils" />
+<p>Langkah 2: Gunakan OBE untuk Membentuk Eselon Baris</p>
+<p>Lakukan operasi baris elementer untuk mengubah matriks ke bentuk eselon baris:</p>
+<ol class="arabic simple">
+<li><p>Pilih Elemen Pivot</p></li>
+</ol>
+<p>Pilih elemen pertama dalam kolom pertama sebagai pivot (elemen utama).</p>
+<p>Jika pivot = 0, tukar baris dengan baris lain yang memiliki nilai tidak nol pada kolom tersebut.</p>
+<ol class="arabic simple" start="2">
+<li><p>Buat Elemen di Bawah Pivot Menjadi Nol</p></li>
+</ol>
+<p>Untuk setiap baris di bawah pivot, lakukan operasi:</p>
+<p>R_j \to R_j - \frac{a_{j1}}{a_{11}} R_1</p>
+<ol class="arabic simple" start="3">
+<li><p>Ulangi untuk Semua Kolom</p></li>
+</ol>
+<p>Proses ini berlanjut hingga semua elemen di bawah diagonal utama menjadi nol, sehingga terbentuk matriks eselon baris.</p>
+<hr class="docutils" />
+<p>Langkah 3: Gunakan Substitusi Mundur untuk Menyelesaikan Persamaan</p>
+<p>Setelah matriks berbentuk eselon baris, selesaikan nilai variabel dari bawah ke atas (substitusi mundur).</p>
+<p>Jika matriks berbentuk eselon baris tereduksi, solusi langsung diperoleh tanpa perlu substitusi mundur.</p>
 </section>
 </section>
 
@@ -538,9 +609,9 @@ with your book. For more information about this, see <a class="reference externa
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#markdown-notebooks">Markdown + notebooks</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#myst-markdown">MyST markdown</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#code-blocks-and-outputs">Code blocks and outputs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-baris-elementer">Operasi Baris Elementer</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eleminasi-gauss">Eleminasi Gauss</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-langkah-menyelesaikan-eliminasi-gauss">Langkah langkah menyelesaikan Eliminasi Gauss</a></li>
 </ul>
   </nav></div>
 

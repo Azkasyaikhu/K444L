@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Penyelesaian Sistem Persamaan liniear &#8212; My sample book</title>
+    <title>Notebooks with MyST Markdown &#8212; My sample book</title>
   
   
   
@@ -57,12 +57,10 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'markdown-notebooks';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Content with notebooks" href="notebooks.html" />
+    <link rel="prev" title="Penyelesaian Sistem Persamaan liniear" href="notebooks.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -182,8 +180,8 @@
         </ul>
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="markdown.html">Sistem Persamaan Linier</a></li>
-<li class="toctree-l1"><a class="reference internal" href="notebooks.html">Content with notebooks</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Penyelesaian Sistem Persamaan liniear</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks.html">Penyelesaian Sistem Persamaan liniear</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Notebooks with MyST Markdown</a></li>
 </ul>
 
     </div>
@@ -369,7 +367,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Penyelesaian Sistem Persamaan liniear</h1>
+    <h1>Notebooks with MyST Markdown</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -379,9 +377,9 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-baris-elementer">Operasi Baris Elementer</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eleminasi-gauss">Eleminasi Gauss</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-langkah-menyelesaikan-eliminasi-gauss">Langkah langkah menyelesaikan Eliminasi Gauss</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#an-example-cell">An example cell</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-a-notebook-with-myst-markdown">Create a notebook with MyST Markdown</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quickly-add-yaml-metadata-for-myst-notebooks">Quickly add YAML metadata for MyST Notebooks</a></li>
 </ul>
             </nav>
         </div>
@@ -393,154 +391,50 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="penyelesaian-sistem-persamaan-liniear">
-<h1>Penyelesaian Sistem Persamaan liniear<a class="headerlink" href="#penyelesaian-sistem-persamaan-liniear" title="Link to this heading">#</a></h1>
-<p>Penyelesaian sistem persamaan linear bergantung pada jumlah variabel dan jumlah persamaan.</p>
-<p>Berikut beberapa metode penyelesaiannya :
-1.Substitusi
-Salah satu persamaan diubah sehingga salah satu variabel diekspresikan dalam bentuk variabel lain, lalu disubstitusikan ke dalam persamaan kedua.</p>
-<p>2.Eliminasi</p>
-<p>Melibatkan penjumlahan atau pengurangan persamaan untuk menghilangkan satu variabel, sehingga sistem dapat diselesaikan secara bertahap.</p>
-<ol class="arabic simple" start="3">
-<li><p>Metode Matriks (Eliminasi Gauss/Jordan, Invers Matriks)</p></li>
-</ol>
-<p>Sistem ditulis dalam bentuk matriks dan diselesaikan menggunakan operasi baris elementer atau invers matriks</p>
-<section id="operasi-baris-elementer">
-<h2>Operasi Baris Elementer<a class="headerlink" href="#operasi-baris-elementer" title="Link to this heading">#</a></h2>
-<p>Operasi Baris Elementer (OBE) adalah teknik manipulasi baris pada matriks untuk menyelesaikan sistem persamaan linear. OBE digunakan dalam metode Eliminasi Gauss dan Gauss-Jordan untuk mengubah matriks ke bentuk eselon baris atau eselon tereduksi.</p>
-<p>Tiga Jenis Operasi Baris Elementer:</p>
-<ol class="arabic simple">
-<li><p>Pertukaran Baris (Row Swapping)</p></li>
-</ol>
-<p>Menukar dua baris dalam matriks.</p>
-<p>Contoh: Tukar baris ke-1 dan ke-2 →</p>
-<ol class="arabic simple" start="2">
-<li><p>Perkalian Baris dengan Skalar (Scaling)</p></li>
-</ol>
-<p>Mengalikan suatu baris dengan bilangan bukan nol.</p>
-<p>Contoh: Kalikan baris ke-2 dengan 3 →</p>
-<ol class="arabic simple" start="3">
-<li><p>Penjumlahan atau Pengurangan Baris (Row Addition/Subtraction)</p></li>
-</ol>
-<p>Menjumlahkan atau mengurangkan kelipatan suatu baris ke baris lain.</p>
-<p>Contoh:  (mengurangi dua kali baris pertama dari baris kedua)</p>
-<p>Contoh Penerapan OBE:</p>
-<p>Misalkan kita memiliki sistem persamaan:</p>
-<p>\begin{cases}
-x + 2y = 5 \
-3x + 4y = 11
-\end{cases}</p>
-<p>Langkah 1: Tuliskan dalam Matriks Augmented</p>
-<p>\begin{bmatrix}
-1 &amp; 2 &amp; | 5 \
-3 &amp; 4 &amp; | 11
-\end{bmatrix}</p>
-<p>Langkah 2: Eliminasi x dari Baris 2
-Lakukan operasi:
-R_2 \to R_2 - 3R_1</p>
-<p>Hasil:</p>
-<p>\begin{bmatrix}
-1 &amp; 2 &amp; | 5 \
-0 &amp; -2 &amp; | -4
-\end{bmatrix}</p>
-<p>Langkah 3: Ubah Elemen Pivot Menjadi 1
-Bagi baris kedua dengan -2:</p>
-<p>R_2 \to \frac{R_2}{-2}</p>
-<p>Hasil:</p>
-<p>\begin{bmatrix}
-1 &amp; 2 &amp; | 5 \
-0 &amp; 1 &amp; | 2
-\end{bmatrix}</p>
-<p>Langkah 4: Eliminasi y dari Baris 1
-Lakukan:</p>
-<p>R_1 \to R_1 - 2R_2</p>
-<p>Hasil:</p>
-<p>\begin{bmatrix}
-1 &amp; 0 &amp; | 1 \
-0 &amp; 1 &amp; | 2
-\end{bmatrix}</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="notebooks-with-myst-markdown">
+<h1>Notebooks with MyST Markdown<a class="headerlink" href="#notebooks-with-myst-markdown" title="Link to this heading">#</a></h1>
+<p>Jupyter Book also lets you write text-based notebooks using MyST Markdown.
+See <a class="reference external" href="https://jupyterbook.org/file-types/myst-notebooks.html">the Notebooks with MyST Markdown documentation</a> for more detailed instructions.
+This page shows off a notebook written in MyST Markdown.</p>
+<section id="an-example-cell">
+<h2>An example cell<a class="headerlink" href="#an-example-cell" title="Link to this heading">#</a></h2>
+<p>With MyST Markdown, you can define code cells with a directive like so:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>4
+</pre></div>
+</div>
+</div>
+</div>
+<p>When your book is built, the contents of any <code class="docutils literal notranslate"><span class="pre">{code-cell}</span></code> blocks will be
+executed with your default Jupyter kernel, and their outputs will be displayed
+in-line with the rest of your content.</p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>Jupyter Book uses <a class="reference external" href="https://jupytext.readthedocs.io/en/latest/">Jupytext</a> to convert text-based files to notebooks, and can support <a class="reference external" href="https://jupyterbook.org/file-types/jupytext.html">many other text-based notebook files</a>.</p>
+</div>
 </section>
-<section id="eleminasi-gauss">
-<h2>Eleminasi Gauss<a class="headerlink" href="#eleminasi-gauss" title="Link to this heading">#</a></h2>
-<p>Eliminasi Gauss adalah metode untuk menyelesaikan sistem persamaan linear dengan mengubah matriks augmented menjadi bentuk eselon baris menggunakan operasi baris elementer (OBE).</p>
-<p>Berikut beberapa contoh soal eleminasi gauss</p>
-<p>Contoh Soal 1
-Selesaikan dengan menggunakan Eleminasi Gauss</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{array}{cc}
-x_1+2_x2+3x_3z&amp;=6\\
-2x_1+4x_2+6x_12&amp;=4\\
-x_3-x_2&amp;=2
-\end{array}
-\end{split}\]</div>
-<p>Contol Soal 2</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{array}{cc}
-x_1+x_2+x_3&amp;=3\\
-2x_1+x_3&amp;=5\\
-x_1+2x_2&amp;=3\\
-\end{array}
-\end{split}\]</div>
-<p>Contoh Soal 3</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{array}{cc}
-2x_1+2x_2&amp;=4\\
-x_1+x_2&amp;=2\\
-\end{array}
-\end{split}\]</div>
-<p>Penyelesaian
-<img alt="image" src="https://hackmd.io/_uploads/SkINBUF51l.png" /></p>
-<p>Contoh soal 4</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{array}{cc}
-x_1+x_2&amp;=5\\
-x_1+2x_3&amp;=6\\
-\end{array}
-\end{split}\]</div>
-<p>Penyelesaian
-<img alt="image" src="https://hackmd.io/_uploads/S1HPS8Fcyg.png" /></p>
-</section>
-<section id="langkah-langkah-menyelesaikan-eliminasi-gauss">
-<h2>Langkah langkah menyelesaikan Eliminasi Gauss<a class="headerlink" href="#langkah-langkah-menyelesaikan-eliminasi-gauss" title="Link to this heading">#</a></h2>
-<p>Langkah 1: Tuliskan dalam Bentuk Matriks Augmented</p>
-<p>Misalkan sistem persamaan linear diberikan sebagai:</p>
-<p>\begin{cases}
-a_{11}x_1 + a_{12}x_2 + \dots + a_{1n}x_n = b_1 \
-a_{21}x_1 + a_{22}x_2 + \dots + a_{2n}x_n = b_2 \
-\vdots \
-a_{m1}x_1 + a_{m2}x_2 + \dots + a_{mn}x_n = b_m
-\end{cases}</p>
-<p>\begin{bmatrix}
-a_{11} &amp; a_{12} &amp; \dots &amp; a_{1n} &amp; | b_1 \
-a_{21} &amp; a_{22} &amp; \dots &amp; a_{2n} &amp; | b_2 \
-\vdots &amp; \vdots &amp; \ddots &amp; \vdots &amp; \vdots \
-a_{m1} &amp; a_{m2} &amp; \dots &amp; a_{mn} &amp; | b_m
-\end{bmatrix}</p>
-<hr class="docutils" />
-<p>Langkah 2: Gunakan OBE untuk Membentuk Eselon Baris</p>
-<p>Lakukan operasi baris elementer untuk mengubah matriks ke bentuk eselon baris:</p>
+<section id="create-a-notebook-with-myst-markdown">
+<h2>Create a notebook with MyST Markdown<a class="headerlink" href="#create-a-notebook-with-myst-markdown" title="Link to this heading">#</a></h2>
+<p>MyST Markdown notebooks are defined by two things:</p>
 <ol class="arabic simple">
-<li><p>Pilih Elemen Pivot</p></li>
+<li><p>YAML metadata that is needed to understand if / how it should convert text files to notebooks (including information about the kernel needed).
+See the YAML at the top of this page for example.</p></li>
+<li><p>The presence of <code class="docutils literal notranslate"><span class="pre">{code-cell}</span></code> directives, which will be executed with your book.</p></li>
 </ol>
-<p>Pilih elemen pertama dalam kolom pertama sebagai pivot (elemen utama).</p>
-<p>Jika pivot = 0, tukar baris dengan baris lain yang memiliki nilai tidak nol pada kolom tersebut.</p>
-<ol class="arabic simple" start="2">
-<li><p>Buat Elemen di Bawah Pivot Menjadi Nol</p></li>
-</ol>
-<p>Untuk setiap baris di bawah pivot, lakukan operasi:</p>
-<p>R_j \to R_j - \frac{a_{j1}}{a_{11}} R_1</p>
-<ol class="arabic simple" start="3">
-<li><p>Ulangi untuk Semua Kolom</p></li>
-</ol>
-<p>Proses ini berlanjut hingga semua elemen di bawah diagonal utama menjadi nol, sehingga terbentuk matriks eselon baris.</p>
-<hr class="docutils" />
-<p>Langkah 3: Gunakan Substitusi Mundur untuk Menyelesaikan Persamaan</p>
-<p>Setelah matriks berbentuk eselon baris, selesaikan nilai variabel dari bawah ke atas (substitusi mundur).</p>
-<p>Jika matriks berbentuk eselon baris tereduksi, solusi langsung diperoleh tanpa perlu substitusi mundur.</p>
+<p>That’s all that is needed to get started!</p>
+</section>
+<section id="quickly-add-yaml-metadata-for-myst-notebooks">
+<h2>Quickly add YAML metadata for MyST Notebooks<a class="headerlink" href="#quickly-add-yaml-metadata-for-myst-notebooks" title="Link to this heading">#</a></h2>
+<p>If you have a markdown file and you’d like to quickly add YAML metadata to it, so that Jupyter Book will treat it as a MyST Markdown Notebook, run the following command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">jupyter</span><span class="o">-</span><span class="n">book</span> <span class="n">myst</span> <span class="n">init</span> <span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">markdownfile</span><span class="o">.</span><span class="n">md</span>
+</pre></div>
+</div>
 </section>
 </section>
 
@@ -580,7 +474,7 @@ a_{m1} &amp; a_{m2} &amp; \dots &amp; a_{mn} &amp; | b_m
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Content with notebooks</p>
+        <p class="prev-next-title">Penyelesaian Sistem Persamaan liniear</p>
       </div>
     </a>
 </div>
@@ -599,9 +493,9 @@ a_{m1} &amp; a_{m2} &amp; \dots &amp; a_{mn} &amp; | b_m
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-baris-elementer">Operasi Baris Elementer</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eleminasi-gauss">Eleminasi Gauss</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-langkah-menyelesaikan-eliminasi-gauss">Langkah langkah menyelesaikan Eliminasi Gauss</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#an-example-cell">An example cell</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-a-notebook-with-myst-markdown">Create a notebook with MyST Markdown</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quickly-add-yaml-metadata-for-myst-notebooks">Quickly add YAML metadata for MyST Notebooks</a></li>
 </ul>
   </nav></div>
 
