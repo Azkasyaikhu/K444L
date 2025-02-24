@@ -1,55 +1,99 @@
-# Markdown Files
+# Sistem Persamaan Linier
+## Definisi Persamaan Linier
+Sistem persamaan linear bisa diartikan sebagai suatu persamaan aljabar. Dimana persamaan linear sendiri memiliki karakteristik pada setiap sukunya mengandung konstanta atau perkalian konstanta dengan variabel tunggal.
 
-Whether you write your book's content in Jupyter Notebooks (`.ipynb`) or
-in regular markdown files (`.md`), you'll write in the same flavor of markdown
-called **MyST Markdown**.
-This is a simple file to help you get started and show off some syntax.
+Rumus atau bentuk umumnya adalah 
+ax + by = c, atau ax + by + c = 0.
 
-## What is MyST?
+Keterangan:
+a = koefisien dari x
 
-MyST stands for "Markedly Structured Text". It
-is a slight variation on a flavor of markdown called "CommonMark" markdown,
-with small syntax extensions to allow you to write **roles** and **directives**
-in the Sphinx ecosystem.
+b = koefisien dari y
 
-For more about MyST, see [the MyST Markdown Overview](https://jupyterbook.org/content/myst.html).
+x dan y = variabel
 
-## Sample Roles and Directives
+c = konstanta
 
-Roles and directives are two of the most powerful tools in Jupyter Book. They
-are like functions, but written in a markup language. They both
-serve a similar purpose, but **roles are written in one line**, whereas
-**directives span many lines**. They both accept different kinds of inputs,
-and what they do with those inputs depends on the specific role or directive
-that is being called.
+Sifat - sifat persamaan linear :
+1.Penjumlahan dan pengurangan bilangan kedua ruas tak akan mengubah persamaan nilai.
+2.Perkalian dan pembagian bilangan kedua ruas tidak mengubah nilai persamaan
+3.Nilai persamaan tidak berubah jika kedua ruas ditambah atau dikurangi bilangan yang sama.
+4.Suatu persamaan jika dipindah ruas maka penjumlahan berubah jadi pengurangan, perkalian berubah menjadi pembagian, dan sebaliknya.
 
-Here is a "note" directive:
+Berikut contoh penerapan sistem persamaan linear dua variabel dalam soal matematika:
 
-```{note}
-Here is a note
-```
+Jumlah dua bilangan adalah 15, dan selisih kedua bilangan tersebut adalah 3. Tentukan kedua bilangan tersebut.
 
-It will be rendered in a special box when you build your book.
+Langkah 1 :
+- Misalkan bilangan pertama adalah x dan bilangan kedua adalah y.
+- Dari informasi soal, kita dapatkan dua persamaan:
+x + y = 15 (persamaan 1)
+x - y = 3 (persamaan 2)
 
-Here is an inline directive to refer to a document: {doc}`markdown-notebooks`.
+Langkah 2 :
+- Pilih persamaan 2 (x - y = 3) karena lebih mudah untuk diubah bentuknya.
+- Nyatakan x dalam bentuk y:
+  - x = y + 3 (persamaan 3)
+
+Langkah 3 :
+- Substitusikan nilai x dari persamaan 3 (x = y + 3) ke persamaan 1 (x + y = 15):
+- (y + 3) + y = 15
+
+Langkah 4 :
+- Sederhanakan persamaan:
+- 2y + 3 = 15
+- 2y = 12
+- y = 6
+
+Langkah 5 :
+- Substitusikan nilai y = 6 ke persamaan 3 (x = y + 3) untuk mendapatkan nilai x:
+- x = 6 + 3
+- x = 9
+
+Kesimpulan :
+- Jadi, kedua bilangan tersebut adalah 9 dan 6.
 
 
-## Citations
+## Solusi Persamaan Linier
+Dalam memecahkan Persamaan linear terdapat beberapa solusi untuk dapat menyelesaikan persoalan tersebut. Berikut beberapa contoh metode : 
 
-You can also cite references that are stored in a `bibtex` file. For example,
-the following syntax: `` {cite}`holdgraf_evidence_2014` `` will render like
-this: {cite}`holdgraf_evidence_2014`.
+### Metode eliminasi
+Metode ini bekerja dengan care mengeliminasi (menghilangkan) variabel-variabel di dalam sistem persamaan hingga hanya satu variabel yang tertinggal.
 
-Moreover, you can insert a bibliography into your page with this syntax:
-The `{bibliography}` directive must be used for all the `{cite}` roles to
-render properly.
-For example, if the references for your book are stored in `references.bib`,
-then the bibliography is inserted with:
+Pertama-tama, lihat persamaan-persamaan yang ada dan coba cari dua persamaan yang mempunyai koefisien yang sama (baik positif maupun negatif) untuk variabel yang sama. Misalnya, lihat persamaan (1) dan (3).Koefisien untuk y adalah 1 dan −1 untuk masing-masing persamaan. Kita dapat menjumlah kedua persamaan ini untuk menghilangkan y dan kita mendapatkan persamaan (4).
 
-```{bibliography}
-```
+![Screenshot 2025-02-18 101749](https://hackmd.io/_uploads/rkN63OWq1l.png)
 
-## Learn more
+Perhatikan bahwa persamaan (4) terdiri atas variabel x dan z. Sekarang kita perlu persamaan lain yang terdiri atas variabel yang sama dengan persamaan(4).Untuk mendapatkan persamaan ini, kita akan menghilangkan y dari persamaan (1)dan (2). Dalam persamaan (1) dan (2), koefisien untuk y adalah 1 dan 3 masing-masing. Untuk menghilangkan y, kita kalikan persamaan (1) dengan 3 lalu mengurangkan persamaan (2) dari persamaan (1).
 
-This is just a simple starter to get you started.
-You can learn a lot more at [jupyterbook.org](https://jupyterbook.org).
+![Screenshot 2025-02-18 103003](https://hackmd.io/_uploads/r1AAA_b51x.png)
+
+Dengan persamaan (4) dan (5), mari kita coba untuk menghilangkan z.
+
+![Screenshot 2025-02-18 103250](https://hackmd.io/_uploads/rkkFyFW91e.png)
+
+Dari persamaan (6) kita dapatkan x = 2. Sekarang kita bisa subtitusikan (masukkan) nilai dari x ke persamaan (4) untuk mendapatkan nilai z.
+
+![Screenshot 2025-02-18 103434](https://hackmd.io/_uploads/H1001YW9ye.png)
+
+Akhirnya, kita substitusikan (masukkan) nila dari x dan z ke persamaan (1) untuk mendapatkan y.
+
+![Screenshot 2025-02-18 103559](https://hackmd.io/_uploads/SyZElKb5Jx.png)
+
+Jadi solusi sistem persamaan linier di atas adalah x = 2, y = 3, z = 4.
+
+### Eliminasi Gauss / Eliminasi Gauss-Jordan
+Sistem persamaan liniear yang terdiri atas persamaan-persamaan (1), (2) dan (3) dapat juga dinyatakan dalam bentuk matriks teraugmentasi seperti berikut
+
+![Screenshot 2025-02-18 103827](https://hackmd.io/_uploads/HyhplY-5yg.png)
+
+Dengan melakukan serangkaian operasi baris (Eliminasi Gauss), kita dapat menyederhanakan matriks di atas untuk menjadi matriks Eselon-baris.
+
+![Screenshot 2025-02-18 103919](https://hackmd.io/_uploads/ryvgWFbcye.png)
+
+Kemudian kita bisa substitusikan kembali nilai-nilai yang kita dapat untuk mencari nilai dari semua variabel. Atau, kita juga bisa meneruskan dengan serangkaian operasi baris lagi sehingga matriks di atas menjadi matriks yang Eselon-baris tereduksi (dengan menggunakan Eliminasi Gauss-Jordan).
+
+![Screenshot 2025-02-18 104001](https://hackmd.io/_uploads/HyX7-K-5kl.png)
+
+Dengan melakukan operasi Eliminasi Gauss-Jordan, kita mendapatkan solusi dari sistem persamaan linier di atas pada kolom terakhir: 
+x = 2, y = 3, z = 4 .

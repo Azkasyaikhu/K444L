@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Markdown Files &#8212; My sample book</title>
+    <title>Sistem Persamaan Linier &#8212; My sample book</title>
   
   
   
@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -61,7 +61,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Content with notebooks" href="notebooks.html" />
-    <link rel="prev" title="Welcome to your Jupyter Book" href="intro.html" />
+    <link rel="prev" title="Komputasi Aljabar Linear" href="intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -175,12 +175,12 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="intro.html">
-                    Welcome to your Jupyter Book
+                    Komputasi Aljabar Linear
                 </a>
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Markdown Files</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Sistem Persamaan Linier</a></li>
 <li class="toctree-l1"><a class="reference internal" href="notebooks.html">Content with notebooks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
 </ul>
@@ -368,7 +368,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Markdown Files</h1>
+    <h1>Sistem Persamaan Linier</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -378,10 +378,12 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-myst">What is MyST?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-roles-and-directives">Sample Roles and Directives</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#citations">Citations</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learn-more">Learn more</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-persamaan-linier">Definisi Persamaan Linier</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solusi-persamaan-linier">Solusi Persamaan Linier</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metode-eliminasi">Metode eliminasi</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminasi-gauss-eliminasi-gauss-jordan">Eliminasi Gauss / Eliminasi Gauss-Jordan</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -393,59 +395,93 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="markdown-files">
-<h1>Markdown Files<a class="headerlink" href="#markdown-files" title="Link to this heading">#</a></h1>
-<p>Whether you write your book’s content in Jupyter Notebooks (<code class="docutils literal notranslate"><span class="pre">.ipynb</span></code>) or
-in regular markdown files (<code class="docutils literal notranslate"><span class="pre">.md</span></code>), you’ll write in the same flavor of markdown
-called <strong>MyST Markdown</strong>.
-This is a simple file to help you get started and show off some syntax.</p>
-<section id="what-is-myst">
-<h2>What is MyST?<a class="headerlink" href="#what-is-myst" title="Link to this heading">#</a></h2>
-<p>MyST stands for “Markedly Structured Text”. It
-is a slight variation on a flavor of markdown called “CommonMark” markdown,
-with small syntax extensions to allow you to write <strong>roles</strong> and <strong>directives</strong>
-in the Sphinx ecosystem.</p>
-<p>For more about MyST, see <a class="reference external" href="https://jupyterbook.org/content/myst.html">the MyST Markdown Overview</a>.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="sistem-persamaan-linier">
+<h1>Sistem Persamaan Linier<a class="headerlink" href="#sistem-persamaan-linier" title="Link to this heading">#</a></h1>
+<section id="definisi-persamaan-linier">
+<h2>Definisi Persamaan Linier<a class="headerlink" href="#definisi-persamaan-linier" title="Link to this heading">#</a></h2>
+<p>Sistem persamaan linear bisa diartikan sebagai suatu persamaan aljabar. Dimana persamaan linear sendiri memiliki karakteristik pada setiap sukunya mengandung konstanta atau perkalian konstanta dengan variabel tunggal.</p>
+<p>Rumus atau bentuk umumnya adalah
+ax + by = c, atau ax + by + c = 0.</p>
+<p>Keterangan:
+a = koefisien dari x</p>
+<p>b = koefisien dari y</p>
+<p>x dan y = variabel</p>
+<p>c = konstanta</p>
+<p>Sifat - sifat persamaan linear :
+1.Penjumlahan dan pengurangan bilangan kedua ruas tak akan mengubah persamaan nilai.
+2.Perkalian dan pembagian bilangan kedua ruas tidak mengubah nilai persamaan
+3.Nilai persamaan tidak berubah jika kedua ruas ditambah atau dikurangi bilangan yang sama.
+4.Suatu persamaan jika dipindah ruas maka penjumlahan berubah jadi pengurangan, perkalian berubah menjadi pembagian, dan sebaliknya.</p>
+<p>Berikut contoh penerapan sistem persamaan linear dua variabel dalam soal matematika:</p>
+<p>Jumlah dua bilangan adalah 15, dan selisih kedua bilangan tersebut adalah 3. Tentukan kedua bilangan tersebut.</p>
+<p>Langkah 1 :</p>
+<ul class="simple">
+<li><p>Misalkan bilangan pertama adalah x dan bilangan kedua adalah y.</p></li>
+<li><p>Dari informasi soal, kita dapatkan dua persamaan:
+x + y = 15 (persamaan 1)
+x - y = 3 (persamaan 2)</p></li>
+</ul>
+<p>Langkah 2 :</p>
+<ul class="simple">
+<li><p>Pilih persamaan 2 (x - y = 3) karena lebih mudah untuk diubah bentuknya.</p></li>
+<li><p>Nyatakan x dalam bentuk y:</p>
+<ul>
+<li><p>x = y + 3 (persamaan 3)</p></li>
+</ul>
+</li>
+</ul>
+<p>Langkah 3 :</p>
+<ul class="simple">
+<li><p>Substitusikan nilai x dari persamaan 3 (x = y + 3) ke persamaan 1 (x + y = 15):</p></li>
+<li><p>(y + 3) + y = 15</p></li>
+</ul>
+<p>Langkah 4 :</p>
+<ul class="simple">
+<li><p>Sederhanakan persamaan:</p></li>
+<li><p>2y + 3 = 15</p></li>
+<li><p>2y = 12</p></li>
+<li><p>y = 6</p></li>
+</ul>
+<p>Langkah 5 :</p>
+<ul class="simple">
+<li><p>Substitusikan nilai y = 6 ke persamaan 3 (x = y + 3) untuk mendapatkan nilai x:</p></li>
+<li><p>x = 6 + 3</p></li>
+<li><p>x = 9</p></li>
+</ul>
+<p>Kesimpulan :</p>
+<ul class="simple">
+<li><p>Jadi, kedua bilangan tersebut adalah 9 dan 6.</p></li>
+</ul>
 </section>
-<section id="sample-roles-and-directives">
-<h2>Sample Roles and Directives<a class="headerlink" href="#sample-roles-and-directives" title="Link to this heading">#</a></h2>
-<p>Roles and directives are two of the most powerful tools in Jupyter Book. They
-are like functions, but written in a markup language. They both
-serve a similar purpose, but <strong>roles are written in one line</strong>, whereas
-<strong>directives span many lines</strong>. They both accept different kinds of inputs,
-and what they do with those inputs depends on the specific role or directive
-that is being called.</p>
-<p>Here is a “note” directive:</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Here is a note</p>
-</div>
-<p>It will be rendered in a special box when you build your book.</p>
-<p>Here is an inline directive to refer to a document: <a class="reference internal" href="markdown-notebooks.html"><span class="doc">Notebooks with MyST Markdown</span></a>.</p>
+<section id="solusi-persamaan-linier">
+<h2>Solusi Persamaan Linier<a class="headerlink" href="#solusi-persamaan-linier" title="Link to this heading">#</a></h2>
+<p>Dalam memecahkan Persamaan linear terdapat beberapa solusi untuk dapat menyelesaikan persoalan tersebut. Berikut beberapa contoh metode :</p>
+<section id="metode-eliminasi">
+<h3>Metode eliminasi<a class="headerlink" href="#metode-eliminasi" title="Link to this heading">#</a></h3>
+<p>Metode ini bekerja dengan care mengeliminasi (menghilangkan) variabel-variabel di dalam sistem persamaan hingga hanya satu variabel yang tertinggal.</p>
+<p>Pertama-tama, lihat persamaan-persamaan yang ada dan coba cari dua persamaan yang mempunyai koefisien yang sama (baik positif maupun negatif) untuk variabel yang sama. Misalnya, lihat persamaan (1) dan (3).Koefisien untuk y adalah 1 dan −1 untuk masing-masing persamaan. Kita dapat menjumlah kedua persamaan ini untuk menghilangkan y dan kita mendapatkan persamaan (4).</p>
+<p><img alt="Screenshot 2025-02-18 101749" src="https://hackmd.io/_uploads/rkN63OWq1l.png" /></p>
+<p>Perhatikan bahwa persamaan (4) terdiri atas variabel x dan z. Sekarang kita perlu persamaan lain yang terdiri atas variabel yang sama dengan persamaan(4).Untuk mendapatkan persamaan ini, kita akan menghilangkan y dari persamaan (1)dan (2). Dalam persamaan (1) dan (2), koefisien untuk y adalah 1 dan 3 masing-masing. Untuk menghilangkan y, kita kalikan persamaan (1) dengan 3 lalu mengurangkan persamaan (2) dari persamaan (1).</p>
+<p><img alt="Screenshot 2025-02-18 103003" src="https://hackmd.io/_uploads/r1AAA_b51x.png" /></p>
+<p>Dengan persamaan (4) dan (5), mari kita coba untuk menghilangkan z.</p>
+<p><img alt="Screenshot 2025-02-18 103250" src="https://hackmd.io/_uploads/rkkFyFW91e.png" /></p>
+<p>Dari persamaan (6) kita dapatkan x = 2. Sekarang kita bisa subtitusikan (masukkan) nilai dari x ke persamaan (4) untuk mendapatkan nilai z.</p>
+<p><img alt="Screenshot 2025-02-18 103434" src="https://hackmd.io/_uploads/H1001YW9ye.png" /></p>
+<p>Akhirnya, kita substitusikan (masukkan) nila dari x dan z ke persamaan (1) untuk mendapatkan y.</p>
+<p><img alt="Screenshot 2025-02-18 103559" src="https://hackmd.io/_uploads/SyZElKb5Jx.png" /></p>
+<p>Jadi solusi sistem persamaan linier di atas adalah x = 2, y = 3, z = 4.</p>
 </section>
-<section id="citations">
-<h2>Citations<a class="headerlink" href="#citations" title="Link to this heading">#</a></h2>
-<p>You can also cite references that are stored in a <code class="docutils literal notranslate"><span class="pre">bibtex</span></code> file. For example,
-the following syntax: <code class="docutils literal notranslate"><span class="pre">{cite}`holdgraf_evidence_2014`</span></code> will render like
-this: <span id="id1">[<a class="reference internal" href="#id3" title="Christopher Ramsay Holdgraf, Wendy de Heer, Brian N. Pasley, and Robert T. Knight. Evidence for Predictive Coding in Human Auditory Cortex. In International Conference on Cognitive Neuroscience. Brisbane, Australia, Australia, 2014. Frontiers in Neuroscience.">HdHPK14</a>]</span>.</p>
-<p>Moreover, you can insert a bibliography into your page with this syntax:
-The <code class="docutils literal notranslate"><span class="pre">{bibliography}</span></code> directive must be used for all the <code class="docutils literal notranslate"><span class="pre">{cite}</span></code> roles to
-render properly.
-For example, if the references for your book are stored in <code class="docutils literal notranslate"><span class="pre">references.bib</span></code>,
-then the bibliography is inserted with:</p>
-<div class="docutils container" id="id2">
-<div role="list" class="citation-list">
-<div class="citation" id="id3" role="doc-biblioentry">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">HdHPK14</a><span class="fn-bracket">]</span></span>
-<p>Christopher Ramsay Holdgraf, Wendy de Heer, Brian N. Pasley, and Robert T. Knight. Evidence for Predictive Coding in Human Auditory Cortex. In <em>International Conference on Cognitive Neuroscience</em>. Brisbane, Australia, Australia, 2014. Frontiers in Neuroscience.</p>
-</div>
-</div>
-</div>
+<section id="eliminasi-gauss-eliminasi-gauss-jordan">
+<h3>Eliminasi Gauss / Eliminasi Gauss-Jordan<a class="headerlink" href="#eliminasi-gauss-eliminasi-gauss-jordan" title="Link to this heading">#</a></h3>
+<p>Sistem persamaan liniear yang terdiri atas persamaan-persamaan (1), (2) dan (3) dapat juga dinyatakan dalam bentuk matriks teraugmentasi seperti berikut</p>
+<p><img alt="Screenshot 2025-02-18 103827" src="https://hackmd.io/_uploads/HyhplY-5yg.png" /></p>
+<p>Dengan melakukan serangkaian operasi baris (Eliminasi Gauss), kita dapat menyederhanakan matriks di atas untuk menjadi matriks Eselon-baris.</p>
+<p><img alt="Screenshot 2025-02-18 103919" src="https://hackmd.io/_uploads/ryvgWFbcye.png" /></p>
+<p>Kemudian kita bisa substitusikan kembali nilai-nilai yang kita dapat untuk mencari nilai dari semua variabel. Atau, kita juga bisa meneruskan dengan serangkaian operasi baris lagi sehingga matriks di atas menjadi matriks yang Eselon-baris tereduksi (dengan menggunakan Eliminasi Gauss-Jordan).</p>
+<p><img alt="Screenshot 2025-02-18 104001" src="https://hackmd.io/_uploads/HyX7-K-5kl.png" /></p>
+<p>Dengan melakukan operasi Eliminasi Gauss-Jordan, kita mendapatkan solusi dari sistem persamaan linier di atas pada kolom terakhir:
+x = 2, y = 3, z = 4 .</p>
 </section>
-<section id="learn-more">
-<h2>Learn more<a class="headerlink" href="#learn-more" title="Link to this heading">#</a></h2>
-<p>This is just a simple starter to get you started.
-You can learn a lot more at <a class="reference external" href="https://jupyterbook.org">jupyterbook.org</a>.</p>
 </section>
 </section>
 
@@ -485,7 +521,7 @@ You can learn a lot more at <a class="reference external" href="https://jupyterb
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Welcome to your Jupyter Book</p>
+        <p class="prev-next-title">Komputasi Aljabar Linear</p>
       </div>
     </a>
     <a class="right-next"
@@ -513,10 +549,12 @@ You can learn a lot more at <a class="reference external" href="https://jupyterb
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-myst">What is MyST?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-roles-and-directives">Sample Roles and Directives</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#citations">Citations</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learn-more">Learn more</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-persamaan-linier">Definisi Persamaan Linier</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solusi-persamaan-linier">Solusi Persamaan Linier</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metode-eliminasi">Metode eliminasi</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminasi-gauss-eliminasi-gauss-jordan">Eliminasi Gauss / Eliminasi Gauss-Jordan</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
@@ -531,7 +569,7 @@ You can learn a lot more at <a class="reference external" href="https://jupyterb
   <div class="footer-item">
     
 <p class="component-author">
-By The Jupyter Book Community
+By Azka
 </p>
 
   </div>
@@ -541,7 +579,7 @@ By The Jupyter Book Community
 
   <p class="copyright">
     
-      © Copyright 2023.
+      © Copyright 2025.
       <br/>
     
   </p>
