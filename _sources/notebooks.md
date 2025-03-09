@@ -133,8 +133,6 @@ Karna ada variabel bebas $$x_3 = t $$ Sehingga, solusi umum dari sistem persamaa
 
 $$\begin{aligned} x_1 &= 2-t, \\ x_2 &= 2-t, \\ x_3 &= t, \quad t \in \mathbb{R}. \end{aligned}$$
 
----
-<iframe scrolling="no" title="Tentukan himpunan penyelesaian dari sistem persamaan linier dua variabel" src="https://www.geogebra.org/material/iframe/id/hk6eusad/width/700/height/500/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/true/ctl/false" width="700px" height="500px" style="border:0px;"> </iframe>
 Contoh Soal 2
 
 $$
@@ -247,7 +245,7 @@ x_3=\frac{1}{3}
 \end{array}$$
 
 ---
-
+<iframe src="https://www.geogebra.org/classic/jmccwhfc?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
 Contoh Soal 3
 
 $$
