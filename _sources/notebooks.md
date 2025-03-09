@@ -48,52 +48,52 @@ Contoh Penerapan OBE:
 
 Misalkan kita memiliki sistem persamaan:
 
-\begin{cases}
+$$\begin{cases}
 x + 2y = 5 \\
 3x + 4y = 11
-\end{cases}
+\end{cases}$$
 
 Langkah 1: Tuliskan dalam Matriks Augmented
 
-\begin{bmatrix} 
+$$\begin{bmatrix} 
 1 & 2 & | 5 \\ 
 3 & 4 & | 11
-\end{bmatrix}
+\end{bmatrix}$$
 
 Langkah 2: Eliminasi x dari Baris 2
 Lakukan operasi:
-R_2 \to R_2 - 3R_1
+$$R_2 \to R_2 - 3R_1$$
 
 Hasil:
 
-\begin{bmatrix} 
+$$\begin{bmatrix} 
 1 & 2 & | 5 \\ 
 0 & -2 & | -4
-\end{bmatrix}
+\end{bmatrix}$$
 
 Langkah 3: Ubah Elemen Pivot Menjadi 1
 Bagi baris kedua dengan -2:
 
-R_2 \to \frac{R_2}{-2}
+$$R_2 \to \frac{R_2}{-2}$$
 
 Hasil:
 
-\begin{bmatrix} 
+$$\begin{bmatrix} 
 1 & 2 & | 5 \\ 
 0 & 1 & | 2
-\end{bmatrix}
+\end{bmatrix}$$
 
 Langkah 4: Eliminasi y dari Baris 1
 Lakukan:
 
-R_1 \to R_1 - 2R_2
+$$R_1 \to R_1 - 2R_2$$
 
 Hasil:
 
-\begin{bmatrix} 
+$$\begin{bmatrix} 
 1 & 0 & | 1 \\ 
 0 & 1 & | 2
-\end{bmatrix}
+\end{bmatrix}$$
 
 ### Eleminasi Gauss
 Eliminasi Gauss adalah metode untuk menyelesaikan sistem persamaan linear dengan mengubah matriks augmented menjadi bentuk eselon baris menggunakan operasi baris elementer (OBE).
@@ -134,7 +134,7 @@ Karna ada variabel bebas $$x_3 = t $$ Sehingga, solusi umum dari sistem persamaa
 $$\begin{aligned} x_1 &= 2-t, \\ x_2 &= 2-t, \\ x_3 &= t, \quad t \in \mathbb{R}. \end{aligned}$$
 
 ---
-
+<iframe scrolling="no" title="Tentukan himpunan penyelesaian dari sistem persamaan linier dua variabel" src="https://www.geogebra.org/material/iframe/id/hk6eusad/width/700/height/500/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/true/ctl/false" width="700px" height="500px" style="border:0px;"> </iframe>
 Contoh Soal 2
 
 $$

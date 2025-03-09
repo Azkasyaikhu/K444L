@@ -186,6 +186,7 @@
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Penyelesaian Sistem Persamaan liniear</a></li>
 
 <li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Matriks.html">Matriks</a></li>
 </ul>
 
     </div>
@@ -432,39 +433,46 @@ Salah satu persamaan diubah sehingga salah satu variabel diekspresikan dalam ben
 <p>Contoh:  (mengurangi dua kali baris pertama dari baris kedua)</p>
 <p>Contoh Penerapan OBE:</p>
 <p>Misalkan kita memiliki sistem persamaan:</p>
-<p>\begin{cases}
-x + 2y = 5 \
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+x + 2y = 5 \\
 3x + 4y = 11
-\end{cases}</p>
+\end{cases}\end{split}\]</div>
 <p>Langkah 1: Tuliskan dalam Matriks Augmented</p>
-<p>\begin{bmatrix}
-1 &amp; 2 &amp; | 5 \
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{bmatrix} 
+1 &amp; 2 &amp; | 5 \\ 
 3 &amp; 4 &amp; | 11
-\end{bmatrix}</p>
+\end{bmatrix}\end{split}\]</div>
 <p>Langkah 2: Eliminasi x dari Baris 2
 Lakukan operasi:
-R_2 \to R_2 - 3R_1</p>
+$<span class="math notranslate nohighlight">\(R_2 \to R_2 - 3R_1\)</span>$</p>
 <p>Hasil:</p>
-<p>\begin{bmatrix}
-1 &amp; 2 &amp; | 5 \
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{bmatrix} 
+1 &amp; 2 &amp; | 5 \\ 
 0 &amp; -2 &amp; | -4
-\end{bmatrix}</p>
+\end{bmatrix}\end{split}\]</div>
 <p>Langkah 3: Ubah Elemen Pivot Menjadi 1
 Bagi baris kedua dengan -2:</p>
-<p>R_2 \to \frac{R_2}{-2}</p>
+<div class="math notranslate nohighlight">
+\[R_2 \to \frac{R_2}{-2}\]</div>
 <p>Hasil:</p>
-<p>\begin{bmatrix}
-1 &amp; 2 &amp; | 5 \
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{bmatrix} 
+1 &amp; 2 &amp; | 5 \\ 
 0 &amp; 1 &amp; | 2
-\end{bmatrix}</p>
+\end{bmatrix}\end{split}\]</div>
 <p>Langkah 4: Eliminasi y dari Baris 1
 Lakukan:</p>
-<p>R_1 \to R_1 - 2R_2</p>
+<div class="math notranslate nohighlight">
+\[R_1 \to R_1 - 2R_2\]</div>
 <p>Hasil:</p>
-<p>\begin{bmatrix}
-1 &amp; 0 &amp; | 1 \
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{bmatrix} 
+1 &amp; 0 &amp; | 1 \\ 
 0 &amp; 1 &amp; | 2
-\end{bmatrix}</p>
+\end{bmatrix}\end{split}\]</div>
 </section>
 <section id="eleminasi-gauss">
 <h2>Eleminasi Gauss<a class="headerlink" href="#eleminasi-gauss" title="Link to this heading">#</a></h2>
@@ -495,7 +503,8 @@ x_3+x_2=2\\
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned} x_1 &amp;= 2-t, \\ x_2 &amp;= 2-t, \\ x_3 &amp;= t, \quad t \in \mathbb{R}. \end{aligned}\end{split}\]</div>
 <hr class="docutils" />
-<p>Contoh Soal 2</p>
+<iframe scrolling="no" title="Tentukan himpunan penyelesaian dari sistem persamaan linier dua variabel" src="https://www.geogebra.org/material/iframe/id/hk6eusad/width/700/height/500/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/true/ctl/false" width="700px" height="500px" style="border:0px;"> </iframe>
+Contoh Soal 2
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{array}{cc}
