@@ -303,9 +303,6 @@ Dengan demikian, solusi dari sistem persamaan ini adalah semua pasangan $((x_1, 
 $$ (x_1, x_2) = (2 - x_2, x_2) \quad \text{untuk setiap } x_2 \in \mathbb{R} $$
 
 Contoh Soal 4
-
-## Penyelesaian Sistem Persamaan Linear
-
 Diberikan sistem persamaan:
 
 $$
