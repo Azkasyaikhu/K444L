@@ -6,7 +6,9 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>Search - My sample book</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Sistem Persamaan Linear Dengan Menggunakan Invers OBE (Operasi Baris Elementer) &#8212; My sample book</title>
   
   
   
@@ -55,12 +57,13 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'search';</script>
-  <script src="_static/searchtools.js"></script>
-  <script src="_static/language_data.js"></script>
-  <script src="searchindex.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'soal_matriks';</script>
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="#" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Matriks" href="Matriks.html" />
+    <link rel="prev" title="Penyelesaian Sistem Persamaan liniear" href="pp.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -92,7 +95,7 @@
     <div class="search-button__overlay"></div>
     <div class="search-button__search-container">
 <form class="bd-search d-flex align-items-center"
-      action="#"
+      action="search.html"
       method="get">
   <i class="fa-solid fa-magnifying-glass"></i>
   <input type="search"
@@ -122,8 +125,6 @@
     <div class="bd-container__inner bd-page-width">
       
       
-      
-        
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -180,10 +181,10 @@
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="markdown.html">Sistem Persamaan Linier</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pp.html">Penyelesaian Sistem Persamaan liniear</a></li>
-<li class="toctree-l1"><a class="reference internal" href="soal_matriks.html">Sistem Persamaan Linear Dengan Menggunakan Invers OBE (Operasi Baris Elementer)</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Sistem Persamaan Linear Dengan Menggunakan Invers OBE (Operasi Baris Elementer)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Matriks.html">Matriks</a></li>
 </ul>
 
@@ -256,7 +257,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fsearch.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fsoal_matriks.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -268,6 +269,54 @@
   </span>
 <span class="btn__text-container">Open issue</span>
 </a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/soal_matriks.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
 </li>
       
   </ul>
@@ -318,42 +367,125 @@ document.write(`
 </div>
               
               
-  <div class="bd-search-container">
-    <h1>Search</h1>
-    <noscript>
-      <div class="admonition error">
-        <p class="admonition-title">Error</p>
-        <p>Please activate JavaScript to enable the search functionality.</p>
-      </div>
-    </noscript>
-    
-<form class="bd-search d-flex align-items-center"
-      action="#"
-      method="get">
-  <i class="fa-solid fa-magnifying-glass"></i>
-  <input type="search"
-         class="form-control"
-         name="q"
-         id="search-input"
-         placeholder="Search this book..."
-         aria-label="Search this book..."
-         autocomplete="off"
-         autocorrect="off"
-         autocapitalize="off"
-         spellcheck="false"/>
-  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form>
-    <div id="search-results"></div>
-  </div>
-  <script>
-    // Activate the search field on page load
-    let searchInput = document.querySelector("form.bd-search input");
-    if (searchInput) {
-        searchInput.focus();
-        searchInput.select();
-        console.log("[PST]: Set focus on search field.");
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Sistem Persamaan Linear Dengan Menggunakan Invers OBE (Operasi Baris Elementer)</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="sistem-persamaan-linear-dengan-menggunakan-invers-obe-operasi-baris-elementer">
+<h1>Sistem Persamaan Linear Dengan Menggunakan Invers OBE (Operasi Baris Elementer)<a class="headerlink" href="#sistem-persamaan-linear-dengan-menggunakan-invers-obe-operasi-baris-elementer" title="Link to this heading">#</a></h1>
+<p><span class="math notranslate nohighlight">\(-7x1-6x2-12x3=-33\)</span></p>
+<p><span class="math notranslate nohighlight">\(5x1+5x2+7x3=24\)</span></p>
+<p><span class="math notranslate nohighlight">\(x1+4x3=5\)</span></p>
+<p><span class="math notranslate nohighlight">\(A=\begin{bmatrix}-7&amp;-6&amp;-12\\5&amp;5&amp;7\\1&amp;0&amp;4\end{bmatrix}\)</span><br />
+<span class="math notranslate nohighlight">\(x=\begin{bmatrix}x_1\\x_2\\x_3\end{bmatrix}\)</span><br />
+<span class="math notranslate nohighlight">\(b=\begin{bmatrix}-33\\24\\5\end{bmatrix}\)</span>`</p>
+<p>Pertama Gabungkan matriks ( A ) dengan matriks identitas <span class="math notranslate nohighlight">\(( I )\)</span> untuk membentuk matriks augmented <span class="math notranslate nohighlight">\(( [A | I] )\)</span>:</p>
+<p><span class="math notranslate nohighlight">\([A | I] =
+\begin{bmatrix}
+-7 &amp; -6 &amp; -12 &amp; | 1 &amp; 0 &amp; 0 \\
+5 &amp; 5 &amp; 7 &amp; | 0 &amp; 1 &amp; 0 \\
+1 &amp; 0 &amp; 4 &amp; | 0 &amp; 0 &amp; 1
+\end{bmatrix}\)</span></p>
+<p>pakai OBE jadi yang bagian kanan menjadi <span class="math notranslate nohighlight">\(( A^{-1} )\)</span>.</p>
+<p>Lalu kita Ubah Elemen (1,1) Menjadi 1
+jadi Baris pertama dibagi dengan (-7):</p>
+<p><span class="math notranslate nohighlight">\(\begin{bmatrix}
+1 &amp; \frac{6}{7} &amp; \frac{12}{7} &amp; | -\frac{1}{7} &amp; 0 &amp; 0 \\
+5 &amp; 5 &amp; 7 &amp; | 0 &amp; 1 &amp; 0 \\
+1 &amp; 0 &amp; 4 &amp; | 0 &amp; 0 &amp; 1
+\end{bmatrix}\)</span></p>
+<p>Lalu Buat Elemen Kolom Pertama (2,1) dan (3,1) Menjadi 0</p>
+<ul class="simple">
+<li><p>Baris kedua: <span class="math notranslate nohighlight">\(( R_2 \to R_2 - 5 R_1 )\)</span></p></li>
+<li><p>Baris ketiga: <span class="math notranslate nohighlight">\(( R_3 \to R_3 - R_1 )\)</span></p></li>
+</ul>
+<p>Hasilnya:</p>
+<p><span class="math notranslate nohighlight">\(\begin{bmatrix}
+1 &amp; \frac{6}{7} &amp; \frac{12}{7} &amp; | -\frac{1}{7} &amp; 0 &amp; 0 \\
+0 &amp; \frac{5}{7} &amp; -\frac{1}{7} &amp; | \frac{5}{7} &amp; 1 &amp; 0 \\
+0 &amp; -\frac{6}{7} &amp; \frac{16}{7} &amp; | \frac{1}{7} &amp; 0 &amp; 1
+\end{bmatrix}\)</span></p>
+<p>Ubah Elemen (2,2) Menjadi 1
+Kita bagi baris kedua dengan <span class="math notranslate nohighlight">\(( \frac{5}{7} )\)</span>:</p>
+<p><span class="math notranslate nohighlight">\(\begin{bmatrix}
+1 &amp; \frac{6}{7} &amp; \frac{12}{7} &amp; | -\frac{1}{7} &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; -\frac{1}{5} &amp; | 1 &amp; \frac{7}{5} &amp; 0 \\
+0 &amp; -\frac{6}{7} &amp; \frac{16}{7} &amp; | \frac{1}{7} &amp; 0 &amp; 1
+\end{bmatrix}\)</span></p>
+<p>Setelah Itu Buat Elemen Kolom Kedua (1,2) dan (3,2) Menjadi 0</p>
+<ul class="simple">
+<li><p>Baris pertama: <span class="math notranslate nohighlight">\(( R_1 \to R_1 - \frac{6}{7} R_2 )\)</span></p></li>
+<li><p>Baris ketiga: <span class="math notranslate nohighlight">\(( R_3 \to R_3 + \frac{6}{7} R_2 )\)</span></p></li>
+</ul>
+<p>Hasilnya:</p>
+<p><span class="math notranslate nohighlight">\(\begin{bmatrix}
+1 &amp; 0 &amp; \frac{18}{35} &amp; | -\frac{13}{35} &amp; -\frac{42}{35} &amp; 0 \\
+0 &amp; 1 &amp; -\frac{1}{5} &amp; | 1 &amp; \frac{7}{5} &amp; 0 \\
+0 &amp; 0 &amp; \frac{22}{35} &amp; | \frac{13}{35} &amp; \frac{42}{35} &amp; 1
+\end{bmatrix}\)</span></p>
+<p>Ubah Elemen (3,3) Menjadi 1
+Kita bagi baris ketiga dengan <span class="math notranslate nohighlight">\(( \frac{22}{35} )\)</span>:</p>
+<p><span class="math notranslate nohighlight">\(\begin{bmatrix}
+1 &amp; 0 &amp; \frac{18}{35} &amp; | -\frac{13}{35} &amp; -\frac{42}{35} &amp; 0 \\
+0 &amp; 1 &amp; -\frac{1}{5} &amp; | 1 &amp; \frac{7}{5} &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; | \frac{13}{22} &amp; \frac{42}{22} &amp; \frac{35}{22}
+\end{bmatrix}\)</span></p>
+<p>Buat Elemen Kolom Ketiga (1,3) dan (2,3) Menjadi 0</p>
+<ul class="simple">
+<li><p>Baris pertama: <span class="math notranslate nohighlight">\(( R_1 \to R_1 - \frac{18}{35} R_3 )\)</span></p></li>
+<li><p>Baris kedua: <span class="math notranslate nohighlight">\(( R_2 \to R_2 + \frac{1}{5} R_3 )\)</span></p></li>
+</ul>
+<p>Hasilnya:</p>
+<p><span class="math notranslate nohighlight">\(\begin{bmatrix}
+1 &amp; 0 &amp; 0 &amp; | -3 &amp; 5 &amp; 2 \\
+0 &amp; 1 &amp; 0 &amp; | 2 &amp; 1 &amp; 1 \\
+0 &amp; 0 &amp; 1 &amp; | \frac{13}{22} &amp; \frac{21}{11} &amp; \frac{35}{22}
+\end{bmatrix}\)</span>
+Bagian kanan dari matriks ini adalah <span class="math notranslate nohighlight">\(( A^{-1} )\)</span>.</p>
+<p>Langkah 8: Hitung <span class="math notranslate nohighlight">\(( x = A^{-1} b )\)</span>
+Kita kalikan <span class="math notranslate nohighlight">\(( A^{-1} )\)</span> dengan <span class="math notranslate nohighlight">\(( b )\)</span>:</p>
+<p><span class="math notranslate nohighlight">\(x = A^{-1} b =
+\begin{bmatrix}
+-3 &amp; 5 &amp; 2
+\end{bmatrix}\)</span></p>
+<p>Sehingga diperoleh:</p>
+<p><span class="math notranslate nohighlight">\(x_1 = -3, \quad x_2 = 5, \quad x_3 = 2\)</span></p>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
     }
-  </script>
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
 
               
               
@@ -362,6 +494,24 @@ document.write(`
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="pp.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Penyelesaian Sistem Persamaan liniear</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Matriks.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Matriks</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
