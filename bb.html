@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Komputasi Aljabar Linear &#8212; My sample book</title>
+    <title>Pembuktian Transformasi Rotasi Bidang &#8212; My sample book</title>
   
   
   
@@ -59,10 +59,10 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'intro';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'bb';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Sistem Persamaan Linier" href="markdown.html" />
+    <link rel="prev" title="Determinan Matriks" href="aa.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -125,8 +125,6 @@
       
       
       
-        
-      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -145,7 +143,7 @@
     
   
 
-<a class="navbar-brand logo" href="#">
+<a class="navbar-brand logo" href="intro.html">
   
   
   
@@ -176,19 +174,19 @@
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1 current active">
-                <a class="reference internal" href="#">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
                     Komputasi Aljabar Linear
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="markdown.html">Sistem Persamaan Linier</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pp.html">Penyelesaian Sistem Persamaan liniear</a></li>
 <li class="toctree-l1"><a class="reference internal" href="soal_matriks.html">Sistem Persamaan Linear Dengan Menggunakan Invers OBE (Operasi Baris Elementer)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Matriks.html">Matriks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="aa.html">Determinan Matriks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="bb.html">Pembuktian Transformasi Rotasi Bidang</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Pembuktian Transformasi Rotasi Bidang</a></li>
 </ul>
 
     </div>
@@ -260,7 +258,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fbb.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -290,7 +288,7 @@
       
       
       
-      <li><a href="_sources/intro.md" target="_blank"
+      <li><a href="_sources/bb.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -361,7 +359,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -372,11 +372,19 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Komputasi Aljabar Linear</h1>
+    <h1>Pembuktian Transformasi Rotasi Bidang</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-langkah-pembuktian">Langkah-langkah Pembuktian</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -386,10 +394,75 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="komputasi-aljabar-linear">
-<h1>Komputasi Aljabar Linear<a class="headerlink" href="#komputasi-aljabar-linear" title="Link to this heading">#</a></h1>
-<div class="toctree-wrapper compound">
-</div>
+  <section class="tex2jax_ignore mathjax_ignore" id="pembuktian-transformasi-rotasi-bidang">
+<h1>Pembuktian Transformasi Rotasi Bidang<a class="headerlink" href="#pembuktian-transformasi-rotasi-bidang" title="Link to this heading">#</a></h1>
+<p>Kita ingin membuktikan bahwa transformasi linier <span class="math notranslate nohighlight">\(T: \mathbb{R}^2 \to \mathbb{R}^2\)</span> yang merepresentasikan rotasi berlawanan arah jarum jam sebesar sudut <span class="math notranslate nohighlight">\(\theta\)</span>, bisa dinyatakan dengan matriks:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+A = 
+\begin{bmatrix}
+\cos \theta &amp; -\sin \theta \\
+\sin \theta &amp; \cos \theta
+\end{bmatrix}
+\end{split}\]</div>
+<section id="langkah-langkah-pembuktian">
+<h2>Langkah-langkah Pembuktian<a class="headerlink" href="#langkah-langkah-pembuktian" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Misalkan kita punya vektor <span class="math notranslate nohighlight">\(\mathbf{v} = (x, y)\)</span>. Kita bisa ubah ke bentuk koordinat polar:</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+\mathbf{v} = (x, y) = (r \cos \alpha, r \sin \alpha)
+\]</div>
+<p>Di mana:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(r\)</span> adalah panjang dari vektor <span class="math notranslate nohighlight">\(\mathbf{v}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\alpha\)</span> adalah sudut antara vektor <span class="math notranslate nohighlight">\(\mathbf{v}\)</span> dan sumbu-x positif</p></li>
+</ul>
+<ol class="arabic simple" start="2">
+<li><p>Jika vektor tersebut diputar sebesar <span class="math notranslate nohighlight">\(\theta\)</span>, maka posisinya menjadi:</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+\mathbf{v'} = (r \cos(\alpha + \theta),\ r \sin(\alpha + \theta))
+\]</div>
+<ol class="arabic simple" start="3">
+<li><p>Gunakan identitas trigonometri sudut jumlah:</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+\cos(\alpha + \theta) = \cos \alpha \cos \theta - \sin \alpha \sin \theta
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\sin(\alpha + \theta) = \sin \alpha \cos \theta + \cos \alpha \sin \theta
+\]</div>
+<p>Maka:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\mathbf{v'} = r 
+\begin{bmatrix}
+\cos \alpha \cos \theta - \sin \alpha \sin \theta \\
+\sin \alpha \cos \theta + \cos \alpha \sin \theta
+\end{bmatrix}
+\end{split}\]</div>
+<ol class="arabic simple" start="4">
+<li><p>Karena <span class="math notranslate nohighlight">\(x = r \cos \alpha\)</span> dan <span class="math notranslate nohighlight">\(y = r \sin \alpha\)</span>, maka:</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\mathbf{v'} = 
+\begin{bmatrix}
+\cos \theta &amp; -\sin \theta \\
+\sin \theta &amp; \cos \theta
+\end{bmatrix}
+\begin{bmatrix}
+x \\
+y
+\end{bmatrix}
+\end{split}\]</div>
+<p>Artinya, rotasi memang dapat direpresentasikan oleh matriks di atas.</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -422,14 +495,14 @@ document.write(`
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="right-next"
-       href="markdown.html"
-       title="next page">
+    <a class="left-prev"
+       href="aa.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Sistem Persamaan Linier</p>
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Determinan Matriks</p>
       </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -437,6 +510,21 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-langkah-pembuktian">Langkah-langkah Pembuktian</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
